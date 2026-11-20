@@ -4,15 +4,15 @@
   "name": "Matrix 适配器",
   "description": "通过 Matrix Client-Server API 接入任意 Matrix 服务器，支持用户名密码登录、端到端加密与双向消息路由",
   "author": {
-    "name": "MaiBot 社区",
-    "url": "https://github.com/Mai-with-u"
+    "name": "bluemika111",
+    "url": "https://github.com/bluemika111"
   },
   "license": "GPL-v3.0-or-later",
   "urls": {
-    "repository": "https://github.com/Mai-with-u/maibot",
-    "homepage": "https://github.com/Mai-with-u/maibot",
-    "documentation": "https://docs.maibot.chat/plugin/message-gateway",
-    "issues": "https://github.com/Mai-with-u/maibot/issues"
+    "repository": "https://github.com/bluemika111/maibot-matrix-adapter",
+    "homepage": "https://github.com/bluemika111/maibot-matrix-adapter",
+    "documentation": "https://github.com/bluemika111/maibot-matrix-adapter/blob/main/README.md",
+    "issues": "https://github.com/bluemika111/maibot-matrix-adapter/issues"
   },
   "changelog": "CHANGELOG.md",
   "host_application": {
@@ -70,5 +70,5 @@
       "zh-CN"
     ]
   },
-  "id": "maibot.matrix-adapter"
+  "id": "github.bluemika111.maibot-matrix-adapter"
 }
