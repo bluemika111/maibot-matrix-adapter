@@ -1,0 +1,74 @@
+{
+  "manifest_version": 2,
+  "version": "0.1.0",
+  "name": "Matrix 适配器",
+  "description": "通过 Matrix Client-Server API 接入任意 Matrix 服务器，支持用户名密码登录、端到端加密与双向消息路由",
+  "author": {
+    "name": "MaiBot 社区",
+    "url": "https://github.com/Mai-with-u"
+  },
+  "license": "GPL-v3.0-or-later",
+  "urls": {
+    "repository": "https://github.com/Mai-with-u/maibot",
+    "homepage": "https://github.com/Mai-with-u/maibot",
+    "documentation": "https://docs.maibot.chat/plugin/message-gateway",
+    "issues": "https://github.com/Mai-with-u/maibot/issues"
+  },
+  "changelog": "CHANGELOG.md",
+  "host_application": {
+    "min_version": "1.3.0",
+    "max_version": "1.3.99"
+  },
+  "sdk": {
+    "min_version": "2.16.0",
+    "max_version": "2.99.99"
+  },
+  "dependencies": [
+    {
+      "type": "python_package",
+      "name": "matrix-nio",
+      "version_spec": ">=0.26.0"
+    },
+    {
+      "type": "python_package",
+      "name": "vodozemac",
+      "version_spec": ">=0.9.0"
+    },
+    {
+      "type": "python_package",
+      "name": "peewee",
+      "version_spec": ">=3.14"
+    },
+    {
+      "type": "python_package",
+      "name": "cachetools",
+      "version_spec": ">=5.3"
+    },
+    {
+      "type": "python_package",
+      "name": "atomicwrites",
+      "version_spec": ">=1.4"
+    }
+  ],
+  "display": {
+    "icon": {
+      "type": "local",
+      "value": "assets/icon.svg",
+      "fallback": "message-square",
+      "background": "#0DBD8B"
+    }
+  },
+  "capabilities": [
+    "gateway.send",
+    "gateway.receive",
+    "config.get"
+  ],
+  "i18n": {
+    "default_locale": "zh-CN",
+    "locales_path": "_locales",
+    "supported_locales": [
+      "zh-CN"
+    ]
+  },
+  "id": "maibot.matrix-adapter"
+}
